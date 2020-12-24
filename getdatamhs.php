@@ -2,7 +2,7 @@
 require_once "koneksi.php";
 
 $sql    = "SELECT * FROM mahasiswa";
-$query  = mysql_query($con, $sql);
+$query  = mysqli_query($con, $sql);
 
 while ($row = mysqli_fetch_assoc($query)) {
     $data[] = $row;
